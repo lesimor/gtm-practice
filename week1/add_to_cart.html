@@ -23,12 +23,14 @@
           name: product_name,
           price: product_sale_price,
           category: iCategoryNo,
+          // variant 추가
           variant: variant,
           quantity: quantity,
         });
       });
     } else {
       // 아직 옵션을 선택하지 않았음.
+      // 옵션 선택하지 않은 경우에는 아예 데이터를 전송하지 않도록 처리? 또는 이 정보도 남겨야 하나?
       console.log("Not selected yet");
     }
   } else {
